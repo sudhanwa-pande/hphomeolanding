@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Appointment - hpHomeo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo">
+        <img src="assets/Screenshot_2026-03-08_170134-removebg-preview.png" alt="hpHomeo Logo">
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html#doctors">Find Doctors</a></li>
+        <li><a href="index.html#journey">How it works</a></li>
+        <li><a href="index.html#heal">Blog</a></li>
+      </ul>
+      <div class="nav-buttons" id="navButtons">
+        <a href="book-appointment.html" class="btn btn-outline">Patient Login</a>
+        <a href="book-appointment.html" class="btn btn-accent">Doctor Login</a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Coming Soon -->
+  <section class="coming-soon">
+    <div>
+      <h1>Coming Soon</h1>
+      <p>We're working hard to bring you online appointment booking. Stay tuned!</p>
+      <a href="index.html" class="btn btn-primary">Back to Home</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>Address</h4>
+          <p>Hahnemann's Homoeo Pharmacy,<br>Garia Main Road,<br>Kolkata &ndash; 700084, India</p>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="terms-and-conditions.html">Terms & Conditions</a>
+        </div>
+        <div class="footer-col">
+          <h4>Contact Us</h4>
+          <p>support@hphomeo.com</p>
+          <p>hphomeo.com</p>
+        </div>
+      </div>
+      <div class="footer-bottom">&copy; 2026 hpHomeo. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
+    const navButtons = document.getElementById('navButtons');
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+      navButtons.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

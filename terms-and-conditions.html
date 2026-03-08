@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terms & Conditions - hpHomeo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo">
+        <img src="assets/Screenshot_2026-03-08_170134-removebg-preview.png" alt="hpHomeo Logo">
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html#doctors">Find Doctors</a></li>
+        <li><a href="index.html#journey">How it works</a></li>
+        <li><a href="index.html#heal">Blog</a></li>
+      </ul>
+      <div class="nav-buttons" id="navButtons">
+        <a href="book-appointment.html" class="btn btn-outline">Patient Login</a>
+        <a href="book-appointment.html" class="btn btn-accent">Doctor Login</a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Terms Content -->
+  <section class="legal-page">
+    <div class="container">
+      <h1>Terms & Conditions</h1>
+
+      <h2>1. Acceptance of Terms</h2>
+      <p>By accessing or using the website hphomeo.com or any services offered by hpHomeo (hereinafter "the Clinic"), you agree to be bound by these Terms & Conditions. If you do not agree, please do not use our services.</p>
+
+      <h2>2. Services Provided</h2>
+      <p>hpHomeo provides homeopathic healthcare services including but not limited to:</p>
+      <ul>
+        <li>Online and in-person consultations with qualified homeopathic practitioners</li>
+        <li>Appointment booking and scheduling</li>
+        <li>Patient follow-ups via WhatsApp and email</li>
+        <li>Health information and guidance through digital channels</li>
+      </ul>
+      <p>Our services are intended for informational and supportive healthcare purposes. They do not replace emergency medical care or treatment by a licensed allopathic physician.</p>
+
+      <h2>3. Appointments & Cancellations</h2>
+      <ul>
+        <li>Appointments must be booked in advance through our website or WhatsApp</li>
+        <li>Please provide at least 24 hours notice for cancellations or rescheduling</li>
+        <li>No-shows without prior notice may incur a cancellation fee</li>
+        <li>The Clinic reserves the right to reschedule appointments due to practitioner unavailability</li>
+      </ul>
+
+      <h2>4. Payments & Refunds</h2>
+      <ul>
+        <li>Consultation fees are payable at the time of booking or as specified</li>
+        <li>Payments are processed securely through third-party payment gateways</li>
+        <li>Refunds for prepaid consultations may be issued if cancelled with at least 24 hours notice</li>
+        <li>No refunds will be issued for completed consultations</li>
+        <li>In case of technical payment failure, contact us at support@hphomeo.com</li>
+      </ul>
+
+      <h2>5. Medical Disclaimer</h2>
+      <p>The information and advice provided by hpHomeo practitioners is for general healthcare support and homeopathic treatment. It is:</p>
+      <ul>
+        <li>Not a substitute for professional medical diagnosis or emergency treatment</li>
+        <li>Based on homeopathic principles which are complementary in nature</li>
+        <li>Subject to individual response and results may vary</li>
+      </ul>
+      <p>Always seek immediate emergency care for serious or life-threatening conditions.</p>
+
+      <h2>6. WhatsApp Communication</h2>
+      <p>By providing your WhatsApp number, you consent to receive:</p>
+      <ul>
+        <li>Appointment confirmations and reminders</li>
+        <li>Follow-up messages from our healthcare team</li>
+        <li>Service-related notifications</li>
+      </ul>
+      <p>You may opt out of WhatsApp communications at any time by notifying us at support@hphomeo.com.</p>
+
+      <h2>7. Intellectual Property</h2>
+      <p>All content on hphomeo.com including text, images, logos, and design is the intellectual property of hpHomeo. Reproduction or redistribution without written consent is strictly prohibited.</p>
+
+      <h2>8. Limitation of Liability</h2>
+      <p>To the maximum extent permitted by applicable law, hpHomeo shall not be liable for any indirect, incidental, or consequential damages arising from use of our services or website. Our total liability in any case shall not exceed the amount paid by you for the specific service in question.</p>
+
+      <h2>9. Governing Law</h2>
+      <p>These Terms & Conditions are governed by and construed in accordance with the laws of India. Any disputes arising shall be subject to the exclusive jurisdiction of the courts in India.</p>
+
+      <h2>10. Changes to Terms</h2>
+      <p>We reserve the right to modify these Terms at any time. Updated terms will be posted on this page. Continued use of our services constitutes acceptance of any revised terms.</p>
+
+      <h2>11. Contact</h2>
+      <p>For questions regarding these Terms & Conditions:</p>
+      <div class="contact-info">
+        <p>support@hphomeo.com</p>
+        <p>hphomeo.com</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>Address</h4>
+          <p>Hahnemann's Homoeo Pharmacy,<br>Garia Main Road,<br>Kolkata &ndash; 700084, India</p>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="terms-and-conditions.html">Terms & Conditions</a>
+        </div>
+        <div class="footer-col">
+          <h4>Contact Us</h4>
+          <p>support@hphomeo.com</p>
+          <p>hphomeo.com</p>
+        </div>
+      </div>
+      <div class="footer-bottom">&copy; 2026 hpHomeo. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
+    const navButtons = document.getElementById('navButtons');
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+      navButtons.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
