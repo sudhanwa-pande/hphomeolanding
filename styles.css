@@ -199,8 +199,14 @@ h3 {
 .hero-content h1 {
   margin-bottom: var(--sm);
 }
+.gradient-text {
+  background: linear-gradient(90deg, var(--dark) 0%, var(--primary) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
 .hero-content .leaf-icon {
-  width: 36px;
+  width: 52px;
   vertical-align: middle;
   margin-left: 8px;
 }
@@ -305,6 +311,13 @@ h3 {
 .step-card.highlighted {
   background: var(--primary);
   color: var(--white);
+  cursor: pointer;
+}
+a.step-card.highlighted {
+  display: block;
+}
+a.step-card.highlighted h3 {
+  color: var(--white);
 }
 .step-card.highlighted p {
   color: rgba(255,255,255,0.85);
@@ -379,6 +392,7 @@ h3 {
   height: 160px;
   border-radius: 50%;
   object-fit: cover;
+  object-position: top center;
   flex-shrink: 0;
 }
 .doctor-info h3 {
@@ -605,7 +619,11 @@ h3 {
 
   .hero .container {
     flex-direction: column;
-    text-align: center;
+    text-align: left;
+  }
+  .hero-content h1 {
+    font-size: 32px;
+    word-break: break-word;
   }
   .hero-content p {
     margin-left: auto;
@@ -630,10 +648,14 @@ h3 {
 
   .heal-naturally .container {
     flex-direction: column;
-    text-align: center;
+    text-align: left;
   }
   .checklist {
-    align-items: center;
+    align-items: flex-start;
+    padding: 0 var(--sm);
+  }
+  .checklist li {
+    text-align: left;
   }
 
   .footer-grid {
